@@ -36,6 +36,16 @@ We use DIV2K dataset for training and Set5, Set14, B100, and Urban100 dataset fo
       ├── DIV2K_valid_HR
       └── DIV2K_valid_LR_bicubic
   ```
+  🙌 Download [MURA](https://figshare.com/articles/dataset/Rethinking_Degradation_Radiograph_Super-Resolution_via_AID-SRGAN_Dataset_/20418036/3) and unzip on `dataset` directory as below (x4):
+  ```
+  dataset
+  └── MURA
+      ├── MURA_SR_GT
+      ├── MURA_mini_X4
+      ├── MURA_Test_HR
+      └── MURA_LR_X4
+  ```
+  
 2. To accelerate training, we first convert training images to h5 format as follow (h5py module has to be installed).
 ```shell
 $ python div2h5.py
